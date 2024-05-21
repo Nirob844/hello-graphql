@@ -9,9 +9,11 @@
     "@types/node": "^20.12.12",
     "graphql": "^16.8.1"
   },
-  "type": "module",
   "scripts": {
-    "compile": "tsc",
-    "start": "npm run compile && node ./dist/index.js"
+    "compile": "tsc -w",
+    "start": "nodemon ./dist/index.js"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
   }
 }
